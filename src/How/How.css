@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Bebas+Neue&family=Dongle:wght@700&family=Hubballi&family=Inter:wght@900&family=Italiana&family=Kanit&family=Lato&family=League+Spartan:wght@100&family=Lobster&family=Montserrat:ital,wght@1,100&family=Oswald:wght@500&family=Pacifico&family=Roboto+Mono&family=Roboto:wght@700&family=Rubik:wght@600&family=Russo+One&family=Train+One&display=swap");
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+body,
+html {
+  user-select: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .app {
+    width: 100%;
+  }
+  h1 {
+    font-size: 10px;
+  }
+}

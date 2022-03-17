@@ -1,13 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Bebas+Neue&family=Dongle:wght@700&family=Inter:wght@900&family=Italiana&family=Kanit&family=Lato&family=League+Spartan:wght@100&family=Lobster&family=Oswald:wght@500&family=Pacifico&family=Roboto+Mono&family=Roboto:wght@700&family=Rubik:wght@600&family=Russo+One&family=Train+One&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009ca0;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #768e8f;
+}
+
+.links {
+  position: absolute;
+  right: 30%;
+  display: flex;
+  flex-direction: row;
+  top: 2%;
+  text-decoration: none;
+  opacity: 1;
+  z-index: 10;
+}
+
+.link {
+  text-decoration: none;
+  color: #d7d7d7;
+  margin-left: 80px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.link:hover {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  100% {
+    text-shadow: 0 0 10px #d7d7d7, 0 0 1px #d7d7d7, 0 0 0px antiquewhite,
+      0 0 4px antiquewhite, 0 0 5px antiquewhite, 0 0 6px, 0 0 0px antiquewhite;
+  }
+  0% {
+    text-shadow: 0 0 1px #d7d7d7, 0 0 1px #d7d7d7, 0 0 2px antiquewhite,
+      0 0 4px antiquewhite, 0 0 5px antiquewhite, 0 0 6px antiquewhite,
+      0 0 0px antiquewhite;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .App {
+    height: 1000vh;
+    width: 100%;
+  }
+  .links {
+    width: 100%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .link {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .links {
+    width: 100%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 50%);
+  }
+  .link {
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .links {
+    width: 100%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 50%);
+  }
+  .link {
+    font-size: 1.5vw;
+  }
 }

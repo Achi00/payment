@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Bebas+Neue&family=Dongle:wght@700&family=Inter:wght@900&family=Italiana&family=Kanit&family=Lato&family=League+Spartan:wght@100&family=Lobster&family=Oswald:wght@500&family=Pacifico&family=Roboto+Mono&family=Roboto:wght@700&family=Rubik:wght@600&family=Russo+One&family=Train+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Bebas+Neue&family=Dongle:wght@700&family=Hubballi&family=Inter:wght@900&family=Italiana&family=Kanit&family=Lato&family=League+Spartan:wght@100&family=Lobster&family=Oswald:wght@500&family=Pacifico&family=Roboto+Mono&family=Roboto:wght@700&family=Rubik:wght@600&family=Russo+One&family=Train+One&display=swap");
+
+.card-Part {
+  position: absolute;
+  color: rgb(179, 171, 162);
+  top: 20%;
+  left: 40%;
+  transform: translate(50%, -40%);
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  user-select: none;
+}
+
+.text {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  color: aliceblue;
+  font-family: "Hubballi", cursive;
+  transform: translate(50%, 50%);
+}
